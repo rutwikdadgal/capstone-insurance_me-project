@@ -1,4 +1,4 @@
-- name : Configure Docker on EC2 Instances
+- name : Configure Docker
   hosts : all
   become: true
   connection : ssh
@@ -17,4 +17,4 @@
     become_user : root
 
   - name: Deploy Docker Container
-    command: docker run -itd -p 8084:8081 rutwikd/insure_me:1.0
+    command: docker run -itd -p 8085:8081 rutwikd/insure_me:1.0

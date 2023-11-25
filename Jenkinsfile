@@ -9,7 +9,7 @@ node{
     }
     
     stage("Containerize"){
-        sh 'docker build -t rutwikd/insure_me:1.0 .'
+        sh "docker build -t rutwikd/insure_me:1.0 ."
     }
     
     stage("push to dockerhub"){

@@ -21,6 +21,6 @@ node{
     }
     
     stage("Deploy"){
-       ansiblePlaybook become: true, credentialsId: 'ansible_ssh', disableHostKeyChecking: true, installation: 'ansible', inventory: '/etc/ansible/hosts/', playbook: 'configure-test-server', vaultTmpPath: ''
+       ansiblePlaybook become: true, credentialsId: 'ansible_ssh', disableHostKeyChecking: true, installation: 'ansible', inventory: '/etc/ansible/hosts/', playbook: 'test-server.yml', vaultTmpPath: ''
     }
 }
